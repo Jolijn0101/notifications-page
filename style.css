@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+  /** Primary **/
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  /** Neutral **/
+  --white: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(210, 60%, 98%);
+  --light-grayish-blue-1: hsl(211, 68%, 94%);
+  --light-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
+
+  --transition: all 0.7s ease;
+}
+
+body {
+  background-color: var(--white);
+  padding: 1.5em 1em;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--dark-grayish-blue);
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--very-dark-blue);
+}
+
+/**** header ****/
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+header p {
+  width: 90%;
+  justify-self: flex-end;
+  text-align: right;
+  transition: var(--transition);
+}
+.notification-num {
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.2em 0.7em;
+  border-radius: 0.3em;
+  margin-left: 0.5em;
+}
+
+/**** main ****/
+article {
+  display: flex;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.active {
+  background-color: var(--very-light-grayish-blue);
+}
+article .avatar {
+  width: 3em;
+  height: 3em;
+  margin-right: 1em;
+}
+.name {
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  transition: var(--transition);
+}
+.post-link {
+  font-weight: 800;
+  color: var(--dark-grayish-blue);
+  transition: var(--transition);
+}
+.dot {
+  font-size: 1.2em;
+  color: var(--red);
+  margin-left: 0.2em;
+}
+.time {
+  display: block;
+  color: var(--grayish-blue);
+}
+.club-link {
+  font-weight: 800;
+  color: var(--blue);
+}
+.message {
+  padding: 1em;
+  border: 1px solid var(--light-grayish-blue-2);
+  border-radius: 0.3em;
+  margin-top: 0.8em;
+  transition: var(--transition);
+}
+.post-img {
+  width: 3.5em;
+  height: 3.5em;
+  margin-left: 1em;
+  justify-self: flex-end;
+  transition: var(--transition);
+}
+.img-comment p {
+  width: calc(100% - 56px - 48px);
+}
+
+/** hover states **/
+header p:hover,
+.name:hover,
+.post-link:hover,
+.club-link:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+.message:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-blue-1);
+}
+.post-img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  .notification-num {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html {
+    height: 100vh;
+    background-color: var(--very-light-grayish-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body {
+    width: 43em;
+    padding: 2.5em 2em 0 2em;
+    border-radius: 1em;
+  }
+}
