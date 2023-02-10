@@ -147,7 +147,7 @@ header p:hover,
 
 @media screen and (min-width: 1024px) {
   html {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--very-light-grayish-blue);
     display: flex;
     align-items: center;
@@ -157,5 +157,6 @@ header p:hover,
     width: 43em;
     padding: 2.5em 2em 0 2em;
     border-radius: 1em;
+    margin: 5em 0;
   }
 }
