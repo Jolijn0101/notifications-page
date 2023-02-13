@@ -29,14 +29,14 @@ body {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--dark-grayish-blue);
   line-height: 1.5em;
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
   color: var(--very-dark-blue);
 }
@@ -46,10 +46,13 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.title-wrapper {
+  display: flex;
 }
 header p {
-  width: 90%;
   justify-self: flex-end;
   text-align: right;
   transition: var(--transition);
@@ -57,7 +60,7 @@ header p {
 .notification-num {
   background-color: var(--blue);
   color: var(--white);
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.2em 0.7em;
   border-radius: 0.3em;
   margin-left: 0.5em;
@@ -68,7 +71,7 @@ article {
   display: flex;
   padding: 1em;
   border-radius: 0.5em;
-  margin-bottom: 1em;
+  margin-bottom: 0.6em;
 }
 .active {
   background-color: var(--very-light-grayish-blue);
@@ -89,7 +92,7 @@ article .avatar {
   transition: var(--transition);
 }
 .dot {
-  font-size: 1.2em;
+  font-size: 1em;
   color: var(--red);
   margin-left: 0.2em;
 }
@@ -154,7 +157,7 @@ header p:hover,
     justify-content: center;
   }
   body {
-    width: 45em;
+    width: 38em;
     padding: 2.5em 2em 0 2em;
     border-radius: 1em;
     margin: 5em 0;
